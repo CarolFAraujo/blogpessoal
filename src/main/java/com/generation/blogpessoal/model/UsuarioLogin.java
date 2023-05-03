@@ -19,7 +19,7 @@ public class UsuarioLogin {
 		this.token = token;
 	}
 
-	
+	public UsuarioLogin() {	}
 
 	public Long getId() {
 		return this.id;

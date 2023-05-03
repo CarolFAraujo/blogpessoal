@@ -47,10 +47,7 @@ public class Usuario {
 
 	/* Criar métodos construtores */
 
-	public Long getId() {
-		return this.id;
-	}
-
+	
 	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
 		this.id = id;
 		this.nome = nome;
@@ -64,6 +61,11 @@ public class Usuario {
 	}
 
 	/* Insira os Getters and Setters */
+	
+	public Long getId() {
+		return this.id;
+		
+	}
 	public void setId(Long id) {
 		this.id = id;
 	}
