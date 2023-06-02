@@ -3,6 +3,7 @@ package com.generation.blogpessoal.model;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
@@ -34,6 +35,7 @@ public class Usuario {
 	@Email(message = "O Atributo Usuário deve ser um email válido!")
 	private String usuario;
 
+	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	@NotBlank(message = "O Atributo Senha é Obrigatório!")
 	@Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
 	private String senha;
